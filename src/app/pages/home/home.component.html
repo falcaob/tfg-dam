@@ -1,3 +1,21 @@
-<div class="card flex justify-center">
-    <p-button label="Nose" />
+<div class="page-content">
+    <div class="div1">
+        <img src="agenda.png" alt="Agenda" class="agenda-img" />
+        <h2 class="title">Agenda y eventos</h2>
+        <button pButton type="button" label="Ver más >" class="p-button ver-mas-btn"></button>
+    </div>
+
+    <div class="div2">
+        <img src="competencias.png" alt="Competencias" class="img" />
+        <a class="section-link" [routerLink]="'/competencias'">Competencias</a>
+    </div>
+    <div class="div3">
+        <img src="refAP.jpg" alt="Referentes AP" class="img" />
+        <a class="section-link" [routerLink]="'/referentes-ap'">Referentes AP</a>
+    </div>
+    <div class="div4">
+        <img src="refAH.jpg" alt="Referentes AH" class="img" />
+        <a class="section-link" [routerLink]="'/referentes-ah'">Referentes AH</a>
+    </div>
+
 </div>

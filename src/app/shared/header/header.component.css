@@ -50,7 +50,6 @@
 
 ::ng-deep .p-menubar .p-menubar-item-link:hover {
     background-color: #e68a00 !important;
-    border-radius: 10px !important;
     color: white !important;
 }
 

@@ -1,0 +1,59 @@
+.page-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1em;
+    padding: 1em;
+}
+
+.div1 {
+    grid-column: 1 / -1;
+    background-color: #d4d4d4;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1em solid #cc7a00;
+}
+
+.agenda-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.div2,
+.div3,
+.div4 {
+    background-color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1em solid #cc7a00;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.section-link {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #e68a00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.section-link:hover {
+    background-color: #cc7a00;
+}
