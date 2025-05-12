@@ -1,6 +1,6 @@
-/* Force light theme for black theme of web navigators */
 body {
-    margin-top: 50px; /* Because of banner */
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    margin-top: 50px; /* Top banner */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
+
