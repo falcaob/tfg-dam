@@ -1,9 +1,4 @@
 <div class="page-content">
-    <!-- <p-card class="div1">
-    <img src="agenda.png" alt="Agenda" class="agenda-img" />
-    <h2 class="title">Agenda y eventos</h2>
-    <button pButton type="button" label="Ver más >" class="p-button ver-mas-btn"></button>
-  </p-card> -->
 
     <p-card class="div1">
         <ng-template #header>
@@ -56,4 +51,26 @@
             </div>
         </ng-template>
     </p-card>
+</div>
+<!-- Section 3 grey row document -->
+<div class="grey-section">
+    <div class="doc-div">
+        <img src="doc_home_comp.jpg" alt="Documento" class="doc-img" />
+        <p-card class="doc-card">
+            <ng-template #title>Documento Oficial de la EPA HCC</ng-template>
+            <!-- <ng-template #footer>
+                <button pButton type="button" label="Ver más >" class="p-button ver-mas-btn"></button>
+            </ng-template> -->
+            <a pButton
+                href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/sites/default/files/sincfiles/wsas-media-mediafile_sasdocumento/2019/epa_heridas_cronicas_complejas.pdf"
+                target="_blank" rel="noopener noreferrer" class="p-button ver-mas-btn">Ver más ></a>
+        </p-card>
+    </div>
+</div>
+<!-- Section 4 video -->
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sKZO-rnGSUo?controls=1&autoplay=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
 </div>

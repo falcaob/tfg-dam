@@ -22,6 +22,8 @@ body {
     box-shadow: none !important;
     transition: background-color 0.3s ease;
     border: 1px solid #000 !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
 }
 
 .ver-mas-btn:hover {
@@ -32,3 +34,5 @@ body {
 p-card {
     border-top: 5px solid #cc7a00 ;
 }
+
+

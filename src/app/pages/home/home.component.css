@@ -19,7 +19,8 @@
 
 .img {
     width: 100%;
-    height: 200px; /* Tamaño uniforme */
+    height: 200px;
+    /* Unidorm size */
     object-fit: cover;
     margin-bottom: 0.5rem;
 }
@@ -48,4 +49,63 @@
 
 .section-link:hover {
     background-color: #cc7a00;
+}
+
+/* Section 3 home (grey row) */
+.grey-section {
+    background-color: #d4d4d4;
+    border-radius: 4px;
+    width: 100%;
+    padding: 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.doc-div {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doc-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doc-card {
+    position: absolute;
+    right: -3em;
+    bottom: -2em;
+    width: 250px;
+    z-index: 2;
+}
+
+.doc-card ::ng-deep .p-card {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+/* Section 4 video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
+    max-width: 100%;
+    margin-top: 5em;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 4px;
 }
