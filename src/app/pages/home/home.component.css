@@ -95,10 +95,10 @@
 /* Section 4 video */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 ratio */
+    padding-bottom: 56.25%; /* 16:9 ratio */
     max-width: 100%;
     margin-top: 5em;
+    margin-bottom: 0
 }
 
 .video-wrapper iframe {
