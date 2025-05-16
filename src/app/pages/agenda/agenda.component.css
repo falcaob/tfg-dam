@@ -1,0 +1,56 @@
+:host ::ng-deep .refresh-btn .p-button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+:host ::ng-deep .refresh-btn .p-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+    border: 1px black solid;
+}
+
+.table-footer {
+    padding: 50px;
+    padding-bottom: 10em;
+}
+
+:host ::ng-deep .p-tag {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+:host ::ng-deep .p-datatable thead th,
+:host ::ng-deep .p-table thead th {
+    background-color: #e68a00 !important;
+    padding: 12px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* espacio entre imagen y título */
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.caption-image {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.caption-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,44 @@
+<p-table [value]="events" [tableStyle]="{ 'min-width': '60rem' }">
+    <ng-template #caption>
+        <div class="caption-container">
+            <img src="welcome.jpg" alt="Welcome" class="caption-image" />
+            <div class="caption-text">
+                <h1 class="text-xl font-bold flex items-center gap-2">
+                    Eventos EPA-HCC
+                    <p-button icon="pi pi-refresh" class="refresh-btn" rounded raised></p-button>
+                </h1>
+            </div>
+        </div>
+    </ng-template>
+
+
+    <ng-template #header>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha</th>
+            <th>Ubicación</th>
+            <th>Categoría</th>
+            <th>Participantes</th>
+            <th>Estado</th>
+        </tr>
+    </ng-template>
+
+    <ng-template #body let-event>
+        <tr>
+            <td>{{ event.name }}</td>
+            <td>{{ event.date }}</td>
+            <td>{{ event.location }}</td>
+            <td>{{ event.category }}</td>
+            <td>{{ event.participants }}</td>
+            <td>
+                <p-tag [value]="event.status" [severity]="getSeverity(event.status)" />
+            </td>
+        </tr>
+    </ng-template>
+
+    <ng-template #footer>
+        <div class="table-footer">
+            En total hay {{ events ? events.length : 0 }} eventos.
+        </div>
+    </ng-template>
+</p-table>
