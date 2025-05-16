@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AgendaComponent } from './pages/agenda/agenda.component';
+import { CompetenciasComponent } from './pages/competencias/competencias.component';
 
 export const routes: Routes = [
 
@@ -17,5 +18,20 @@ export const routes: Routes = [
         path: 'agenda', 
         component: AgendaComponent
     },
-    
+    { 
+        path: 'competencias', 
+        component: CompetenciasComponent
+    },
+    { 
+        path: 'referentes-ap', 
+        component: AgendaComponent
+    },
+    { 
+        path: 'referentes-ah', 
+        component: AgendaComponent
+    },
+    { 
+        path: 'contacto', 
+        component: AgendaComponent
+    },
 ];
