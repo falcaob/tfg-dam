@@ -24,7 +24,6 @@
 
 .footer-bottom {
     background-color: #48586a;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +35,7 @@
 
 .footer-icon i {
     font-size: 1.4em;
+    color: white;
 }
 
 .scroll-top-btn {
