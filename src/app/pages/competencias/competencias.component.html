@@ -1,17 +1,82 @@
-<p-card class="div1 custom-card">
-  <div class="card-content">
-    <div class="card-text">
-      <h2>Agenda y Eventos</h2>
-      <h4>Descubre nuestro calendario</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-        numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </p>
-      <button pButton type="button" label="Ver más >" class="p-button ver-mas-btn mt-2" [routerLink]="'/agenda'"></button>
-    </div>
-    <div class="card-img">
-      <img src="agenda.png" alt="Agenda" />
-    </div>
+<div class="page-content">
+  <div class="introduction">
+    <p-card class="div1 custom-card">
+      <div class="card-content">
+        <div class="card-text">
+          <h2>Competencias</h2>
+          <h4>Ámbitos clave de la práctica avanzada</h4>
+          <p>
+            La Enfermera de Práctica Avanzada en Heridas Crónicas y Complejas (EPA-HCC) desempeña un rol esencial en el
+            abordaje integral del paciente. Sus competencias se articulan en torno a cuatro pilares fundamentales que
+            garantizan una atención de calidad basada en la evidencia, la eficiencia y la mejora continua.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="competencias.png" alt="Competencias EPA-HCC" />
+        </div>
+      </div>
+    </p-card>
   </div>
-</p-card>
+
+  <div class="accordition">
+    <p-accordion value="0">
+      <p-accordion-panel value="0">
+        <p-accordion-header>
+          <i class="pi pi-heart-fill"></i>
+          Competencia Asistencial
+        </p-accordion-header>
+        <p-accordion-content>
+          <p class="m-0">
+            La EPA-HCC proporciona cuidados especializados en la prevención, diagnóstico, tratamiento y seguimiento de
+            heridas crónicas y complejas. Evalúa integralmente al paciente, toma decisiones clínicas avanzadas y
+            coordina
+            con otros profesionales para garantizar una atención segura, individualizada y basada en la evidencia.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="1">
+        <p-accordion-header>
+          <i class="pi pi-search"></i>
+          Competencia Investigadora
+        </p-accordion-header>
+        <p-accordion-content>
+          <p class="m-0">
+            Integra la investigación en la práctica diaria para mejorar los resultados en salud. Participa en proyectos
+            científicos, lidera estudios clínicos y promueve la innovación mediante el análisis crítico de la
+            literatura,
+            fomentando así una cultura basada en la mejora continua y el conocimiento actualizado.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="2">
+        <p-accordion-header>
+          <i class="pi pi-book mr-2 text-orange-500"></i>
+          Competencia Docente
+        </p-accordion-header>
+        <p-accordion-content>
+          <p class="m-0">
+            Desarrolla acciones formativas dirigidas a pacientes, cuidadores y profesionales sanitarios. Actúa como
+            referente clínico y mentor en el desarrollo de competencias, promoviendo la formación continua y la
+            diseminación del conocimiento en el ámbito de las heridas complejas.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+
+      <p-accordion-panel value="3">
+        <p-accordion-header>
+          <i class="pi pi-cog mr-2 text-orange-500"></i>
+          Competencia en Gestión
+        </p-accordion-header>
+        <p-accordion-content>
+          <p class="m-0">
+            Planifica, coordina y evalúa estrategias de atención que optimicen los recursos sanitarios. Participa en el
+            diseño de protocolos, guías clínicas y políticas sanitarias, aportando una visión estratégica que mejora la
+            eficiencia del sistema y la experiencia del paciente.
+          </p>
+        </p-accordion-content>
+      </p-accordion-panel>
+    </p-accordion>
+  </div>
+</div>
