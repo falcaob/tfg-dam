@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AgendaComponent } from './pages/agenda/agenda.component';
 import { CompetenciasComponent } from './pages/competencias/competencias.component';
+import { ReferentesapComponent } from './pages/referentesap/referentesap.component';
 
 export const routes: Routes = [
 
@@ -24,7 +25,7 @@ export const routes: Routes = [
     },
     { 
         path: 'referentes-ap', 
-        component: AgendaComponent
+        component: ReferentesapComponent
     },
     { 
         path: 'referentes-ah', 
