@@ -1,131 +1,64 @@
 <div class="page-content">
-  <div class="introduction">
-    <p-card class="div1 custom-card">
-      <div class="card-content">
-        <div class="card-text">
-          <h2>Referentes de Atención Primaria</h2>
-          <h4>Ámbitos clave de la práctica avanzada</h4>
-          <p>
-            La Enfermera de Práctica Avanzada en Heridas Crónicas y Complejas (EPA-HCC) desempeña un rol esencial en el
-            abordaje integral del paciente. Sus competencias se articulan en torno a cuatro pilares fundamentales que
-            garantizan una atención de calidad basada en la evidencia, la eficiencia y la mejora continua.
-          </p>
-        </div>
-        <div class="card-img">
-          <img src="refAP.jpg" alt="Competencias EPA-HCC" />
-        </div>
-      </div>
-    </p-card>
-  </div>
-
-  <!-- <div>
-    <p-dataview #dv [value]="referentes">
-    <ng-template #list let-items>
-        <div class="grid grid-cols-12 gap-4 grid-nogutter">
-            <div class="col-span-12" *ngFor="let item of items; let first = first">
-                <div
-                    class="flex flex-col sm:flex-row sm:items-center p-6 gap-4"
-                    [ngClass]="{ 'border-t border-surface-200 dark:border-surface-700': !first }"
-                >
-                
-                    <div class="md:w-40 relative">
-                        <img
-                            class="block xl:block mx-auto rounded-border w-full"
-                            [src]="item.foto"
-                            [alt]="item.nombre"
-                        />
-                        <p-tag
-                            [value]="item.zona"
-                            severity="info"
-                            class="absolute"
-                            styleClass="dark:!bg-surface-900"
-                            [style.left.px]="4"
-                            [style.top.px]="4"
-                        />
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between md:items-center flex-1 gap-6">
-                        <div class="flex flex-row md:flex-col justify-between items-start gap-2">
-                            <div>
-                                <span class="font-medium text-secondary text-sm">Área: {{ item.area }}</span>
-                                <div class="text-lg font-medium text-surface-900 dark:text-surface-0 mt-2">{{ item.nombre }}</div>
-                            </div>
-                            <div class="bg-surface-100 dark:bg-surface-700 p-1" style="border-radius: 30px">
-                                <div
-                                    class="bg-surface-0 dark:bg-surface-900 flex items-center gap-2 justify-center py-1 px-2"
-                                    style="border-radius: 30px;"
-                                >
-                                    <span class="text-surface-900 dark:text-surface-0 font-medium text-sm">{{
-                                        item.experiencia + ' años de experiencia'
-                                    }}</span>
-                                    <i class="pi pi-briefcase text-primary-500"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:items-end gap-4">
-                            <p-button
-                                icon="pi pi-user"
-                                label="Ver Perfil"
-                                class="flex-auto md:flex-initial whitespace-nowrap"
-                            />
-                        </div>
-                    </div>
+    <div class="introduction">
+        <p-card class="div1 custom-card">
+            <div class="card-content">
+                <div class="card-text">
+                    <h2>Referentes de Atención Primaria</h2>
+                    <h4>Ámbitos clave de la práctica avanzada</h4>
+                    <p>
+                        La Enfermera de Práctica Avanzada en Heridas Crónicas y Complejas (EPA-HCC) desempeña un rol
+                        esencial en el
+                        abordaje integral del paciente. Sus competencias se articulan en torno a cuatro pilares
+                        fundamentales que
+                        garantizan una atención de calidad basada en la evidencia, la eficiencia y la mejora continua.
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="refAP.jpg" alt="Competencias EPA-HCC" />
                 </div>
             </div>
-        </div>
-    </ng-template>
-</p-dataview>
+        </p-card>
+    </div>
 
-  </div>  -->
-  <div>
-    <p-dataview #dv [value]="referentes">
-        <ng-template #list let-items>
-            <div class="grid grid-cols-12 gap-4 grid-nogutter">
-                <div class="col-span-12" *ngFor="let item of items; let first = first">
-                    <div class="referente-item" [ngClass]="{ 'border-t border-surface-200 dark:border-surface-700': !first }">
-                        
-                        <div class="referente-img-container">
-                            <img
-                                class="block xl:block mx-auto rounded-border w-full"
-                                [src]="item.foto"
-                                [alt]="item.nombre"
-                            />
-                            <p-tag
-                                [value]="item.zona"
-                                severity="info"
-                                class="zona-tag"
-                                styleClass="dark:!bg-surface-900"
-                                [style.left.px]="4"
-                                [style.top.px]="4"
-                            />
-                        </div>
+    <div>
+        <p-dataview #dv [value]="referentes">
+            <ng-template #list let-items>
+                <div class="grid grid-cols-12 gap-4 grid-nogutter">
+                    <div class="col-span-12" *ngFor="let item of items; let first = first">
+                        <div class="referente-item"
+                            [ngClass]="{ 'border-t border-surface-200 dark:border-surface-700': !first }">
 
-                        <div class="referente-content">
-                            <div class="referente-info">
-                                <span class="referente-area">Área: {{ item.area }}</span>
-                                <div class="referente-nombre">{{ item.nombre }}</div>
+                            <div class="referente-img-container">
+                                <img class="block xl:block mx-auto rounded-border w-full" [src]="item.foto"
+                                    [alt]="item.nombre" />
+                                <p-tag [value]="item.zona" severity="info" class="zona-tag"
+                                    styleClass="dark:!bg-surface-900" [style.left.px]="4" [style.top.px]="4" />
                             </div>
 
-                            <div class="referente-exp-box">
-                                <div class="referente-exp">
-                                    <span>{{ item.experiencia + ' años de experiencia' }}</span>
-                                    <i class="pi pi-briefcase text-primary-500"></i>
+                            <div class="referente-content">
+                                <div class="referente-info">
+                                    <span class="referente-area">Área: {{ item.area }}</span>
+                                    <div class="referente-nombre">{{ item.nombre }}</div>
+                                </div>
+
+                                <div class="referente-exp-box">
+                                    <div class="referente-exp">
+                                        <span>{{ item.experiencia + ' años de experiencia' }}</span>
+                                        <i class="pi pi-briefcase text-primary-500"></i>
+                                    </div>
+                                </div>
+
+                                <div class="referente-actions">
+                                    <p-button icon="pi pi-user" label="Ver Perfil"
+                                        class="flex-auto md:flex-initial whitespace-nowrap"></p-button>
                                 </div>
                             </div>
 
-                            <div class="referente-actions">
-                                <p-button
-                                    icon="pi pi-user"
-                                    label="Ver Perfil"
-                                    class="flex-auto md:flex-initial whitespace-nowrap"
-                                ></p-button>
-                            </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-        </ng-template>
-    </p-dataview>
-</div>
+            </ng-template>
+        </p-dataview>
+    </div>
 
 </div>
