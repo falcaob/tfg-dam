@@ -4,6 +4,7 @@ import { AgendaComponent } from './pages/agenda/agenda.component';
 import { CompetenciasComponent } from './pages/competencias/competencias.component';
 import { ReferentesapComponent } from './pages/referentesap/referentesap.component';
 import { ReferentesahComponent } from './pages/referentesah/referentesah.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 export const routes: Routes = [
 
@@ -34,6 +35,6 @@ export const routes: Routes = [
     },
     { 
         path: 'contacto', 
-        component: AgendaComponent
+        component: ContactoComponent
     },
 ];

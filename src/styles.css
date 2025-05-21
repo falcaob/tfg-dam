@@ -34,3 +34,7 @@ body {
 p-card {
     border-top: 5px solid #cc7a00;
 }
+
+p {
+    text-align: justify;
+}

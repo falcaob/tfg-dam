@@ -1,44 +1,65 @@
-<p-table [value]="events" [tableStyle]="{ 'min-width': '60rem' }">
-    <ng-template #caption>
-        <div class="caption-container">
-            <img src="welcome.jpg" alt="Welcome" class="caption-image" />
-            <div class="caption-text">
-                <h1 class="text-xl font-bold flex items-center gap-2">
-                    Eventos EPA-HCC
-                    <p-button icon="pi pi-refresh" class="refresh-btn" rounded raised></p-button>
-                </h1>
+<div class="page-content">
+    <div class="introduction">
+        <p-card class="div1 custom-card">
+            <div class="card-content">
+                <div class="card-text">
+                    <h2>Agenda y Eventos</h2>
+                    <p>
+                        La Agenda y los Eventos del equipo de Enfermería de Práctica Avanzada reflejan el compromiso
+                        continuo con la formación, la innovación y el trabajo colaborativo. A través de jornadas,
+                        talleres y encuentros profesionales, se comparten conocimientos, se actualizan competencias y se
+                        fortalecen redes entre referentes y profesionales del ámbito sanitario. </p>
+                    <p>
+                        Esta programación permite mantener una atención actualizada, coherente con los retos clínicos y
+                        alineada con los avances en la práctica asistencial.</p>
+                </div>
+                <div class="card-img">
+                    <img src="welcome.jpg" alt="Agenda" />
+                </div>
             </div>
-        </div>
-    </ng-template>
+        </p-card>
+    </div>
 
+    <p-table [value]="events" [tableStyle]="{ 'min-width': '60rem' }">
+        <ng-template #caption>
+            <div class="caption-container">
+                <div class="caption-text">
+                    <h1 class="text-xl font-bold flex items-center gap-2">
+                        Eventos EPA-HCC
+                        <i class="pi pi-spin pi-spinner-dotted" style="font-size: 2rem"></i>
+                    </h1>
+                </div>
+            </div>
+        </ng-template>
 
-    <ng-template #header>
-        <tr>
-            <th>Nombre</th>
-            <th>Fecha</th>
-            <th>Ubicación</th>
-            <th>Categoría</th>
-            <th>Participantes</th>
-            <th>Estado</th>
-        </tr>
-    </ng-template>
+        <ng-template #header>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Ubicación</th>
+                <th>Categoría</th>
+                <th>Participantes</th>
+                <th>Estado</th>
+            </tr>
+        </ng-template>
 
-    <ng-template #body let-event>
-        <tr>
-            <td>{{ event.name }}</td>
-            <td>{{ event.date }}</td>
-            <td>{{ event.location }}</td>
-            <td>{{ event.category }}</td>
-            <td>{{ event.participants }}</td>
-            <td>
-                <p-tag [value]="event.status" [severity]="getSeverity(event.status)" />
-            </td>
-        </tr>
-    </ng-template>
+        <ng-template #body let-event>
+            <tr>
+                <td>{{ event.name }}</td>
+                <td>{{ event.date }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.category }}</td>
+                <td>{{ event.participants }}</td>
+                <td>
+                    <p-tag [value]="event.status" [severity]="getSeverity(event.status)" />
+                </td>
+            </tr>
+        </ng-template>
 
-    <ng-template #footer>
-        <div class="table-footer">
-            En total hay {{ events ? events.length : 0 }} eventos.
-        </div>
-    </ng-template>
-</p-table>
+        <ng-template #footer>
+            <div class="table-footer">
+                En total hay {{ events ? events.length : 0 }} eventos.
+            </div>
+        </ng-template>
+    </p-table>
+</div>
