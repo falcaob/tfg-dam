@@ -35,6 +35,21 @@
         <div class="field col-12 flex justify-content-end">
             <p-button label="Enviar" icon="pi pi-send" (onClick)="sendForm()"></p-button>
         </div>
-    </div>
 
+        <p-fieldset>
+            <ng-template #header>
+                <div class="flex items-center gap-2 px-2">
+                    <!-- <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                        shape="circle" /> -->
+                    <i class="pi pi-star star-icon" style="font-size: 1rem"></i><i class="pi pi-star star-icon" style="font-size: 1rem"></i><i class="pi pi-star star-icon" style="font-size: 1rem"></i>
+                    <span><strong> Paciente agradecido</strong></span>
+                </div>
+            </ng-template>
+            <p class="m-0">
+                Quiero agradecer de corazón la atención y el cariño que he recibido durante mi tratamiento.
+                Cada profesional que me ha acompañado ha marcado la diferencia en mi recuperación.
+                Gracias por cuidarme con tanta humanidad y dedicación.
+            </p>
+        </p-fieldset>
+    </div>
 </div>

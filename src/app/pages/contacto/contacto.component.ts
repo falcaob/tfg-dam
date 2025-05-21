@@ -8,6 +8,7 @@ import { EditorModule } from 'primeng/editor';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @Component({
   selector: 'app-contacto',
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
     EditorModule,
     ButtonModule,
     DropdownModule,
-    CommonModule
+    CommonModule,
+    FieldsetModule, 
   ],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css',
