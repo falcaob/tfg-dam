@@ -18,19 +18,17 @@
             </div>
         </p-card>
     </div>
-
+    <h2 style="text-align: center;">Organigrama</h2>
     <div>
         <p-organization-chart [value]="referentesHospital" [collapsible]="true">
             <ng-template let-node pTemplate="default">
-                <div class="flex flex-col items-center text-center">
-                    <img [src]="node.data.foto" [alt]="node.label" width="48" class="rounded-full shadow-md mb-2" />
-                    <div class="font-semibold text-lg">{{ node.label }}</div>
-                    <div class="text-sm text-gray-600">{{ node.data.hospital }}</div>
-                    <div class="text-sm text-primary font-medium">{{ node.data.experiencia }} años de experiencia</div>
+                <div class="ref-node">
+                    <img [src]="node.data.foto" [alt]="node.label" class="ref-img" />
+                    <div class="ref-name">{{ node.label }}</div>
+                    <div class="ref-hospital"><i class="pi pi-caret-right" style="font-size: 1rem"></i> {{ node.data.hospital }}</div>
+                    <div class="referente-exp"><i class="pi pi-briefcase" style="font-size: 1rem"></i> {{ node.data.experiencia }} años de experiencia</div>
                 </div>
             </ng-template>
         </p-organization-chart>
-
     </div>
-
 </div>

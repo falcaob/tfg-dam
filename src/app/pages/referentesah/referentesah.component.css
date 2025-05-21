@@ -44,3 +44,37 @@
 h2 {
     border-bottom: 5px solid #cc7a00;
 }
+
+/* TreeNode Styles */
+:host ::ng-deep .ref-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+}
+
+:host ::ng-deep .ref-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+:host ::ng-deep .ref-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+:host ::ng-deep .ref-hospital,
+:host ::ng-deep .ref-exp {
+    font-size: 0.9rem;
+    color: #4b5563;
+}

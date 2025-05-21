@@ -14,49 +14,49 @@ import { CommonModule } from '@angular/common';
 export class ReferentesahComponent {
   referentesHospital: TreeNode[] = [
     {
-      label: 'Coordinadora de Referentes',
+      label: 'Coordinadora de Referentes: Inmaculada Naranjo',
       expanded: true,
       data: {
-        nombre: 'Dra. Carmen López',
-        hospital: 'Hospital Central de Madrid',
-        experiencia: 20,
-        foto: 'enfermera1.jpg'
+        nombre: 'Inmaculada Naranjo',
+        hospital: 'Hospital Universitario Nuestra Señora de Valme',
+        experiencia: 8,
+        foto: 'enfermera_hosp1.jpg'
       },
       children: [
         {
-          label: 'Dr. Mario Torres',
+          label: 'María Herrera',
           expanded: true,
           data: {
-            hospital: 'Hospital Universitario La Paz',
+            hospital: 'Hospital El Tomillar',
             experiencia: 12,
-            foto: 'assets/img/mario.png'
+            foto: 'enfermera_hosp2.jpg'
           },
           children: [
             {
-              label: 'Dra. Ana Gómez',
+              label: 'Ana Gómez',
               data: {
-                hospital: 'Hospital Clínico San Carlos',
-                experiencia: 8,
-                foto: 'assets/img/ana.png'
+                hospital: 'Hospital El Tomillar',
+                experiencia: 10,
+                foto: 'enfermera_hosp3.jpg'
               }
             },
             {
-              label: 'Dra. Nuria Sánchez',
+              label: 'Jesús Valle',
               data: {
-                hospital: 'Hospital 12 de Octubre',
+                hospital: 'Hospital El Tomillar',
                 experiencia: 10,
-                foto: 'assets/img/nuria.png'
+                foto: 'enfermero_hosp4.jpg'
               }
             }
           ]
         },
         {
-          label: 'Dr. Luis Fernández',
+          label: 'Luis Fernández',
           expanded: true,
           data: {
-            hospital: 'Hospital Gregorio Marañón',
+            hospital: 'Hospital Universitario Nuestra Señora de Valme',
             experiencia: 15,
-            foto: 'assets/img/luis.png'
+            foto: 'enfermero_hosp5.jpg'
           }
         }
       ]
