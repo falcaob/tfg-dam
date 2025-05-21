@@ -40,3 +40,7 @@ h2 {
     background-color: #b36900 !important;
     border-color: #b36900 !important;
 }
+
+.validation {
+    color: red;
+}

@@ -12,7 +12,12 @@
 
         <div class="field col-12 md:col-6">
             <label for="telefono" class="contact-label">Teléfono</label>
-            <p-inputNumber inputId="telefono" [(ngModel)]="form.telefono" [useGrouping]="false" class="contact-input" />
+            <p-inputNumber inputId="telefono" [(ngModel)]="form.telefono" [useGrouping]="false" [min]="100000000"
+                [max]="999999999" class="contact-input" required />
+            <div *ngIf="form.telefono && (form.telefono < 100000000 || form.telefono > 999999999)"
+                class="text-red-600 text-sm mt-1 validation">
+                El teléfono debe tener exactamente 9 dígitos.
+            </div>
         </div>
 
         <div class="field col-12">
