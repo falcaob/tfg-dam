@@ -1,0 +1,42 @@
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 20px;
+}
+
+.contact-input,
+.contact-editor {
+    width: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    border-bottom: 5px solid #b36900;
+}
+
+:host ::ng-deep .p-toast {
+    top: 120px !important;
+}
+
+:host ::ng-deep .p-button {
+    background-color: #cc7a00 !important;
+    border-color: #cc7a00 !important;
+    color: white !important;
+    margin-top: 20px;
+}
+
+:host ::ng-deep .p-button:hover {
+    background-color: #b36900 !important;
+    border-color: #b36900 !important;
+}

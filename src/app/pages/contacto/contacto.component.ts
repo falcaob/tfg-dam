@@ -4,64 +4,52 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { EditorModule } from 'primeng/editor';
 import { ButtonModule } from 'primeng/button';
+import { DropdownModule } from 'primeng/dropdown';
 
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [FormsModule,
+  imports: [
+    FormsModule,
     ToastModule,
     InputTextModule,
     InputNumberModule,
-    CascadeSelectModule,
     EditorModule,
-    ButtonModule],
+    ButtonModule,
+    DropdownModule,
+  ],
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css',
-  providers: [MessageService]
+  providers: [MessageService],
 })
 export class ContactoComponent {
-
   form = {
     nombre: '',
     telefono: null,
-    comunidad: null,
-    mensaje: ''
+    provincia: null,
+    mensaje: '',
   };
 
-  comunidades = [
-    {
-      name: 'Andalucía',
-      provincias: [{ name: 'Sevilla' }, { name: 'Málaga' }, { name: 'Granada' }]
-    },
-    {
-      name: 'Cataluña',
-      provincias: [{ name: 'Barcelona' }, { name: 'Tarragona' }]
-    },
-    {
-      name: 'Madrid',
-      provincias: [{ name: 'Madrid' }]
-    },
-    {
-      name: 'Valencia',
-      provincias: [{ name: 'Valencia' }, { name: 'Alicante' }]
-    },
-    {
-      name: 'Galicia',
-      provincias: [{ name: 'A Coruña' }, { name: 'Ourense' }]
-    }
+  provinciasAndalucia = [
+    { label: 'Sevilla', value: 'Sevilla' },
+    { label: 'Málaga', value: 'Málaga' },
+    { label: 'Granada', value: 'Granada' },
+    { label: 'Córdoba', value: 'Córdoba' },
+    { label: 'Cádiz', value: 'Cádiz' },
+    { label: 'Huelva', value: 'Huelva' },
+    { label: 'Almería', value: 'Almería' },
+    { label: 'Jaén', value: 'Jaén' },
   ];
 
   constructor(private messageService: MessageService) {}
 
-  enviarFormulario() {
+  sendForm() {
     this.messageService.add({
       severity: 'success',
-      summary: 'Enviado',
-      detail: 'El formulario ha sido enviado correctamente'
+      summary: 'Gracias por tu mensaje',
+      detail: 'El formulario ha sido enviado correctamente',
     });
   }
-
 }
