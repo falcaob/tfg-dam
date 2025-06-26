@@ -35,7 +35,12 @@ The platform combines **technical information**, **real-life interviews**, and *
 
 ## 📷 Screenshots
 
-![Home page](./screenshots/homepage.png)
+<p align="center">
+  <img src="screenshots/home.png" alt="Home Page" width="500"/>
+  <img src="screenshots/agenda.png" alt="Agenda Page" width="600"/>
+  <img src="screenshots/refAP.png" alt="Referentes AP" width="500"/>
+  <img src="screenshots/contacto.png" alt="Contacto" width="600"/>
+</p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
 
